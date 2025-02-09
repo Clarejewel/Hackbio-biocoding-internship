@@ -2,8 +2,10 @@
 #Stage Zero Project.
 #Using dictionary data structure to organize proline members information
 
-#The information will be nessted as it contains different groupings/classifications
+#The information is nested as it contains different groupings/classifications
+
 #The organisation is in alphabetical order
+
 print("Team_Proline1_Members_Info")
 Team_Proline1_Info = {
     "Member_1": {
