@@ -114,14 +114,19 @@ Team_Proline1_Info["Member_x"]["email"] = "newemail@example.com"
 ```
 Here is what the elements in the dictionary above mean:
 ```
-# Print(): is used to display output of what is contained in the bracket on the screen.
+# Print(): is used to display the output of what is contained in the bracket on the screen.
 
-# "Team_Proline1_Members_Info": Is the title of the entire info to be displayed.
+# "Team_Proline1_Members_Info": This is the title of the entire info to be displayed.
 
 # "Team_Proline1_Info" followed by  an equal to  sign = a curly bracket {} creates the dictionary within which the key-value pairs are housed.
 
-# "Member_4" is a key. Within it is another key "Name" with the value "Judith Mbamalu". Other keys are "Slack Username" "Email", "Hobby", "Country", "Discipline", "Preferred Language" with their corresponding values follojng afetr the **colon :** 
-# Same applies to all team members (Member_1 to Member_5). Each key-value pair is seperated with a comma. Each member's info is also seperated with a a comma.
+# "Member_4" is a key. Within it is the value which is made up of  another key "Name" with the corresponding value "Judith Mbamalu". Other keys are "Slack Username" "Email", "Hobby", "Country", "Discipline", and "Preferred Language" with their corresponding values following the **colon:**
+
+# Note that this is a nested data set, hence the key-value pair within the key.
+
+# The same applies to all team members (Member_1 to Member_5).
+# Each key-value pair is separated with a comma.
+# Each member's info is also separated with a comma.
 
 
 
