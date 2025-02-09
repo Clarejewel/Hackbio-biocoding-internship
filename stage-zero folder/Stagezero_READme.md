@@ -3,9 +3,14 @@ Introduction to coding for biological sciences
 
 **#Stage-Zero**
 ### **README Guide for the Stage-Zero Project****
-**###Instruction: Use any data structure of your choice to organise the given team members'information**
+**###Instruction: Use any data structure of your choice to organise the given team members' information**
 
-The data structure of choice used was **Dictionary**
+**###Background**
+### Data structures are ways to organise data. Data can be organised in lists, tuples, sets or dictionaries.
+
+The data structure of choice used for this task is **Dictionary**
+
+# A dictionary is like a mini database in Python. It helps store and retrieve data easily. It makes use of key-value pairs. Like in a real-world dictionary where one looks up a word (key) to find its meaning (value), in Python, a dictionary helps you look up a key to find its associated value. It can also store nested information. 
 
 --- 
 
@@ -19,6 +24,7 @@ The data structure of choice used was **Dictionary**
 
 #The organisation is in alphabetical order
 
+
 ```
 
 ---
@@ -28,8 +34,7 @@ The data structure of choice used was **Dictionary**
 
 ## Data Structure
 The dataset is stored in this dictionary with the following format:
-```#Stage Zero Project.
-#Using dictionary data structure to organize proline members information
+```#Stage Zero Project: Using dictionary data structure to organize proline members information
 
 print("Team_Proline1_Members_Info")
 Team_Proline1_Info = {
@@ -104,4 +109,23 @@ print(Team_Proline1_Info["Member_4"]["Email"])  #output: Judith Mbamalu
 To modify a member’s information:
 ```
 Team_Proline1_Info["Member_x"]["email"] = "newemail@example.com"
+
+```
+Here is what the elements in the dictionary above mean:
+
+# Print(): is used to display output of what is contained in the bracket on the screen.
+
+# "Team_Proline1_Members_Info": Is the title of the entire info to be displayed.
+
+# "Team_Proline1_Info" followed by  an equal to  sign = a curly bracket {} creates the dictionary within which the key-value pairs are housed.
+
+# "Member_4" is a key. Within it is another key "Name" with the value "Judith Mbamalu". Other keys are "Slack Username" "Email", "Hobby", "Country", "Discipline", "Preferred Language" with their corresponding values follojng afetr the **colon :** 
+# Same applies to all team members (Member_1 to Member_5). Each key-value pair is seperated with a comma. Each member's info is also seperated with a a comma.
+
+
+
+
+
+
+
 
