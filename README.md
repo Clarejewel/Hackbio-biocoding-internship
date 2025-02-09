@@ -2,7 +2,8 @@
 Introduction to coding for biological sciences
 
 **#Stage-Zero Project**
-### **README Guide for the Stage-Zero Project
+### **README Guide for the Stage-Zero Project****
+**###Intruction: Use any data structure of your choice to organise the given team members'information**
 
 The data structure of choice used was **Dictionary**
 
@@ -11,8 +12,12 @@ The data structure of choice used was **Dictionary**
 #### ** Project Title & Description**  
 ```md
 # The Information of Members of Team Proline1
-This is a simple Python dictionary storing details of five group members, including their names, slack user name, email address, hobby, country, discipline and preferred programming language.
-The project's aim was to organise proline member's information using any data structure of choice
+
+#The project contains a simple Python dictionary storing details of five group members, including their names, slack user name, email address, hobby, country, discipline and preferred programming language.
+
+#The information is nested as it contains different groupings/classifications
+
+#The organisation is in alphabetical order
 
 ```
 
@@ -23,12 +28,8 @@ The project's aim was to organise proline member's information using any data st
 
 ## Data Structure
 The dataset is stored in this dictionary with the following format:
-```#Hackbio Code for Bio_Stage-zero project
-#Stage Zero Project.
+```#Stage Zero Project.
 #Using dictionary data structure to organize proline members information
-
-#The information will be nested as it contains different groupings/classifications
-#The organisation is in alphabetical order
 
 print("Team_Proline1_Members_Info")
 Team_Proline1_Info = {
