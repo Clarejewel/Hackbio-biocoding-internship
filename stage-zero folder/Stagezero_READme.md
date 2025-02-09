@@ -1,9 +1,9 @@
 # Hackbio-biocoding-internship
 Introduction to coding for biological sciences
 
-**#Stage-Zero Project**
+**#Stage-Zero**
 ### **README Guide for the Stage-Zero Project****
-**###Intruction: Use any data structure of your choice to organise the given team members'information**
+**###Instruction: Use any data structure of your choice to organise the given team members'information**
 
 The data structure of choice used was **Dictionary**
 
