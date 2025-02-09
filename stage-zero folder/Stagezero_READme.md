@@ -89,14 +89,19 @@ print(Team_Proline1_Info)
 ```
 
 ## Usage
-To access a group member's details:
+
+#To access a member's info (e.g. Name)
 ```
-print(Team_Proline1_Info["Member_4"]["Name"])  # Output: Judith Mbamalu
+print(Team_Proline1_Info["Member_4"]["Name"]) 
+#output: Judith Mbamalu
+
 ```
+#To access a member's email
+```
+print(Team_Proline1_Info["Member_4"]["Email"])  #output: Judith Mbamalu
+```
+
 To modify a member’s information:
 ```
 Team_Proline1_Info["Member_x"]["email"] = "newemail@example.com"
-```
-
-
 
