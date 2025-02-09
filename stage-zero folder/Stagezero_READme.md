@@ -118,7 +118,9 @@ Here is what the elements in the dictionary above mean:
 
 # "Team_Proline1_Members_Info": This is the title of the entire info to be displayed.
 
-# "Team_Proline1_Info" followed by  an equal to  sign = a curly bracket {} creates the dictionary within which the key-value pairs are housed.
+# Team_Proline1_Info is the dictionary within which the key-value pairs are housed. It is created by using curly braces {} after the = sign.
+
+#Key-vlaue pairs are defined and separated by a colon: after the curly braces. 
 
 # "Member_4" is a key. Within it is the value which is made up of  another key "Name" with the corresponding value "Judith Mbamalu". Other keys are "Slack Username" "Email", "Hobby", "Country", "Discipline", and "Preferred Language" with their corresponding values following the **colon:**
 
