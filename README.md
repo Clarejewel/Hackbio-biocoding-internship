@@ -35,7 +35,7 @@ print("Team_Proline1_Members_Info")
 Team_Proline1_Info = {
     "Member_1": {
         "Name": "Adeola Akintola",
-        "Slack_Username": "adeolaa",
+        "Slack Username": "adeolaa",
         "Email": " akintolaadeola09@gmail.com",
         "Hobby": "Surfing for information",
         "Country": "Nigeria",
@@ -43,7 +43,17 @@ Team_Proline1_Info = {
         "Programming Language": "Python"
     },
 
-    "Member_2": {
+    "Member_2" : {
+        "Name": "Alamin Omitogun",
+        "Slack Username": "Alamin",
+        "Email": "omitogunaminbabatunde@gmail.com",
+        "Hobby": "Running, reading",
+        "Country": "Nigeria",
+        "Discipline": "Pharmacology, Cell biology",
+         "Programming Language": "Python"
+    },
+    
+    "Member_3": {
         "Name": "Chika Onyedikachukwu",
         "Slack Username": "Onyedikachukwu",
         "Email": " chikadika18@gmail.com",
@@ -53,7 +63,7 @@ Team_Proline1_Info = {
         "Programming Language": "Python"
     },
     
-    "Member_3": {
+    "Member_4": {
         "Name": "Judith Mbamalu",
         "Slack Username": "JudithM",
         "Email": " mbamalujudith@gmail.com",
@@ -63,7 +73,7 @@ Team_Proline1_Info = {
         "Programming Language": "Python"
     },
 
-    "Member_4": {
+    "Member_5": {
         "Name": "Princewill_Ukot Eseoghene Cynthia",
         "Slack Username": "Ese",
         "Email": "princewillukot@gmail.com",
@@ -73,15 +83,15 @@ Team_Proline1_Info = {
         "Programming Language": "Python"
     }   
 
-    
 }
 print(Team_Proline1_Info)
+
 ```
 
 ## Usage
 To access a group member's details:
 ```
-print(Team_Proline1_Info["Member_2"]["Name"])  # Output: Adeola Akintola
+print(Team_Proline1_Info["Member_4"]["Name"])  # Output: Judith Mbamalu
 ```
 To modify a member’s information:
 ```
