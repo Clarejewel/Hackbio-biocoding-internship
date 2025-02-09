@@ -9,11 +9,12 @@ Introduction to coding for biological sciences
 ### Data structures are ways to organise data. Data can be organised in lists, tuples, sets or dictionaries.
 
 The data structure of choice used for this task is **Dictionary**
+```
 
 # A dictionary is like a mini database in Python. It helps store and retrieve data easily. It makes use of key-value pairs. Like in a real-world dictionary where one looks up a word (key) to find its meaning (value), in Python, a dictionary helps you look up a key to find its associated value. It can also store nested information. 
 
 --- 
-
+```
 #### ** Project Title & Description**  
 ```md
 # The Information of Members of Team Proline1
@@ -112,7 +113,7 @@ Team_Proline1_Info["Member_x"]["email"] = "newemail@example.com"
 
 ```
 Here is what the elements in the dictionary above mean:
-
+```
 # Print(): is used to display output of what is contained in the bracket on the screen.
 
 # "Team_Proline1_Members_Info": Is the title of the entire info to be displayed.
