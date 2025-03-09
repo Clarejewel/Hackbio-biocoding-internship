@@ -115,6 +115,102 @@ print(f"The population size at time t = 10 is {new_population}")
 #The output: he population size at time t = 10 is 62.245933120185455
 
 #The population size increases from 0 to 62.2 as time increases from 0 to 10, following the logistic growth curve formula.
+```
+
+### 3. Using your function, generate a dataframe with 100 different growth curves
+
+100 different growth curves would have different time points with different values of K, r, and t_mid.
+
+#1. FIrst create a list of time points from say, 0 to 25 using the numpy linspace function. It would be a timeline (0 → 25) with 100 time points.
+#Something to note: "np.linspace(start, stop, num)" - Creates evenly spaced numbers between start and stop. The num parameter determines how many numbers to generate.
+
+```
+import numpy as np
+diff_time_points = np.linspace(0,25,100) 
+print(diff_time_points)
+```
+
+#2. The function will use random values for K, r, and t_mid for each growth curve.
+#The random values will be generated using the scipy.stats.uniform.rvs(). 
+This function generates random variables from a uniform distribution.
+#random_values = uniform.rvs(loc=low, scale=high-low, size=n) where loc is the lower bound, scale is the upper bound, and size is the number of random variables to generate.
+```
+from scipy.stats import uniform #importing the uniform distribution from scipy.stats
+K_values = uniform.rvs(loc = 10, scale = 150, size = 100) 
+r_values = uniform.rvs(loc = 0.01, scale = 0.25, size = 100) 
+t_mid_values = uniform.rvs(loc = 5, scale = 50, size = 100) #
+```
+
+#3. Then compute the 100 different growth curves using the function
+The function will loop through the 100 time points and calculate the population size at each time point using the logistic growth curve formula.
+The population size at each time point will be stored in a dictionary.
+```
+
+import pandas as pd 
+growth_curve_data = {} 
+```
+
+Generating the 100 different growth curves. The function will store the population size at each time point in a list.
+```
+
+for i in range(100):
+    K = K_values[i] 
+    r = r_values[i] 
+    t_mid = t_mid_values[i] 
+    population_size = [] 
+    for t in diff_time_points:
+        population = growth_curve_generator(t, K, r, t_mid) 
+        population_size.append(population) 
+    growth_curve_data[f"Growth Curve {i+1}"] 
+```
+    
+#4. Finally, the function will create a dataframe with the time points and the population size at each time point.
+```
+df = pd.DataFrame(growth_curve_data, index = diff_time_points) 
+print(df)
+```
+
+#Let's visualize some of the growth curves using a line plot.
+```
+import matplotlib.pyplot as plt #importing the matplotlib library to plot the growth curves 
+#Plotting the first 5 growth curves
+df.iloc[:, :5].plot() #plots the first 5 growth curves.
+plt.xlabel("Time") #x-axis label
+plt.ylabel("Population Size") #y-axis label
+plt.title("Logistic Population Growth Curves") #title of the plot
+plt.show() #displays the plot
+```
+
+
+###4. Write a function for determining the time to reach 80% of the maximum growth; usually the carrying capacity
+Time to reach 80% of maximum growth is P(t) = 0.8K.
+```
+Imput this in this formula "P(t) = K/1+e^-r(t-tmid))" and make t the subject of the formula 
+
+t = t_mid - log(1/0.8) - 1)/r where 0.8 is the percentage (i.e 80%)
+
+```
+Now create the function
+```
+def time_to_80_percent(K, r, t_mid):
+    t_80 = t_mid - (math.log(1/0.8) - 1)/r #calculates the time to reach 80% of the maximum growth.
+    return t_80 #returns the time to reach 80% of the maximum growth.
+```
+
+#Testing the function with random values for K =100, r = 0.1, t_mid = 5
+```
+time_80_percent = time_to_80_percent(K = 100, r = 0.1, t_mid = 5)
+print(f"The time to reach 80% of the maximum growth is {time_80_percent} units of time.")
+```
+
+###5. Write a function for calculating the hamming distance between your Slack username and twitter/X handle (synthesize if you don’t have one). Feel free to pad it with extra words if they are not of the same length.
+
+Slack username: JudithMba
+Twitter handle :clarejudy
+
+To make the words same length, I will pad the the slack username with ba
+
+Now 
 
 
 
