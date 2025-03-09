@@ -205,13 +205,35 @@ print(f"The time to reach 80% of the maximum growth is {time_80_percent} units o
 
 ###5. Write a function for calculating the hamming distance between your Slack username and twitter/X handle (synthesize if you don’t have one). Feel free to pad it with extra words if they are not of the same length.
 
-Slack username: JudithMba
-Twitter handle :clarejudy
+- The Hamming distance between two strings of equal length is the number of positions at which the corresponding characters are different.
+- The Hamming distance is calculated by comparing the characters at each position in the two strings and counting the number of differences.
+- The function will loop through the characters in the two strings and compare them.
+- If the characters are different, it will increment the count of differences.
+- Finally, it will return the count of differences as the Hamming distance.
 
-To make the words same length, I will pad the the slack username with ba
+#Finally, write a function for calculating the hamming distance between your Slack username and twitter/X handle (synthesize if you don’t have one). Feel free to pad it with extra words if they are not of the same length.
+#The Hamming distance between two strings of equal length is the number of positions at which the corresponding characters are different.
 
-Now 
+Slack_username = "JudithMba"
+Twitter_handle = "clarejudy"
 
+#First define the function for calculating the Hamming distance between two strings.
+```
+def hamming_distance(s1, s2):
+    distance = 0 #initialize the distance to 0.
+    for i in range(len(s1)): #loops through the characters in the strings.
+        if s1[i] != s2[i]: #checks if the characters are not equal.
+            distance += 1 #increments the distance by 1.
+    return distance #returns the Hamming distance.
+```
+#Testing the function with the Slack username and Twitter (X) handle.
+```
+hamming_dist = hamming_distance(Slack_username, Twitter_handle)
+print(f"The Hamming distance between the Slack username and Twitter handle is {hamming_dist}.")
 
+#The output: The Hamming distance between the Slack username and Twitter handle is 9.
+```
+This means that the characters in the Slack username and Twitter handle are different at 9 positions.
+The Hamming distance is a measure of the dissimilarity between two strings of equal length. A lower Hamming distance indicates greater similarity between the strings, while a higher Hamming distance indicates greater dissimilarity. In this case, the Hamming distance between the Slack username and Twitter handle is 9, indicating that they are different at 9 positions.
 
 
