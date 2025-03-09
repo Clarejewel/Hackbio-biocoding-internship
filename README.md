@@ -12,3 +12,11 @@ stage_one_folder/stage_one_Readme.md
 
 **#Stage-Two**
 
+**#Stage-Three**
+
+stage_three_folder/stage_three_Readme.md
+
+
+**#Capstone Project**
+Capstone_project/Capstone_project_Readme.md
+
