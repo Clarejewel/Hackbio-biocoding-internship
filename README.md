@@ -3,6 +3,12 @@ Introduction to coding for biological sciences
 
 **#Stage-Zero**
 
-**###Task: Use any data structure of your choice to organise the given team members'information**
+stage-zero folder/Stagezero_READme.md for the Readme document
 
-See stage-zero folder/Stagezero_READme.md for the Readme document
+
+**#Stage-One**
+
+stage_one_folder/stage_one_Readme.md
+
+**#Stage-Two**
+
