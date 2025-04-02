@@ -64,7 +64,7 @@ protein_translation(dna_sequences)
 ```
 
 ### 2. Write a function that simulates and generates a logistic population growth curve.
-Simply speaking, I want to create a function that simulates how a population grows over time using a logistic growth model. 
+Simply put, I want to create a function that simulates how a population grows over time using a logistic growth model. 
 **Background**
 *Look up what a logistic model plot looks like - its an S-curve, a sigmoid function.*
 This model has three key phases:
@@ -85,7 +85,7 @@ where
 ```
 
 In the case above, my growth curve is Population Size vs Time, but it can also be Cell density vs Time, OD vs Time, CFU vs Time, etc. 
-In creating a function, I can replace the (t) with (x), where x represents any independent variable (e.g., time, population size, concentration etc.).
+In creating a function, I can replace the (t) with (x), where x represents any independent variable (e.g., time, population size, concentration etc).
 
 The function would read thus:
 
@@ -208,7 +208,7 @@ print(f"The time to reach 80% of the maximum growth is {time_80_percent} units o
 - The Hamming distance between two strings of equal length is the number of positions at which the corresponding characters are different.
 - The Hamming distance is calculated by comparing the characters at each position in the two strings and counting the number of differences.
 - The function will loop through the characters in the two strings and compare them.
-- If the characters are different, it will increment the count of differences.
+- If the characters are different, it will increase the count of differences.
 - Finally, it will return the count of differences as the Hamming distance.
 
 #Finally, write a function for calculating the hamming distance between your Slack username and twitter/X handle (synthesize if you don’t have one). Feel free to pad it with extra words if they are not of the same length.
